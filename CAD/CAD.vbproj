@@ -154,6 +154,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\CAD.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -165,6 +166,11 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="obj\Debug\CAD.vbproj.CopyComplete" />
+    <None Include="obj\Debug\CAD.vbproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\CAD.vbproj.GenerateResource.cache" />
+    <None Include="obj\Debug\CAD.vbprojAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CES\CES.vbproj">
@@ -175,9 +181,24 @@
   <ItemGroup>
     <Content Include="bin\Debug\CAD.dll" />
     <Content Include="bin\Debug\CAD.pdb" />
+    <Content Include="bin\Debug\CAD.xml" />
+    <Content Include="bin\Debug\cadeneroSispro.dll" />
+    <Content Include="bin\Debug\CES.dll" />
+    <Content Include="bin\Debug\CES.pdb" />
+    <Content Include="bin\Debug\CES.xml" />
+    <Content Include="bin\Debug\Contexto.Configuracion.dll" />
+    <Content Include="bin\Debug\Contexto.Configuracion.Persistencia.XML.dll" />
+    <Content Include="bin\Debug\Contexto.Entidades.dll" />
+    <Content Include="bin\Debug\Contexto.Entidades.Persistencia.Relacional.dll" />
+    <Content Include="bin\Debug\Contexto.Persistencia.Relacional.Sql.dll" />
+    <Content Include="obj\Debug\CAD.dll" />
+    <Content Include="obj\Debug\CAD.pdb" />
+    <Content Include="obj\Debug\CAD.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CAD.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

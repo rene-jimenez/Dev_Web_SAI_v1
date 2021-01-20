@@ -209,8 +209,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\cadeneroSispro.dll" />
     <Content Include="bin\Debug\CES.dll" />
     <Content Include="bin\Debug\CES.pdb" />
+    <Content Include="bin\Debug\CES.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

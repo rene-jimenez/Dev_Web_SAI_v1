@@ -728,6 +728,7 @@
       <DependentUpon>nuevoPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.5.AssemblyAttributes.vb" />
     <Compile Include="seleccionSistema.aspx.designer.vb">
       <DependentUpon>seleccionSistema.aspx</DependentUpon>
     </Compile>
