@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsReporteOficioxAtender" targetNamespace="http://tempuri.org/dtsReporteOficioxAtender.xsd" xmlns:mstns="http://tempuri.org/dtsReporteOficioxAtender.xsd" xmlns="http://tempuri.org/dtsReporteOficioxAtender.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsReporteOficioxAtender" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsReporteOficioxAtender" msprop:Generator_UserDSName="dtsReporteOficioxAtender">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblOficio" msprop:Generator_TableClassName="tblOficioDataTable" msprop:Generator_TableVarName="tabletblOficio" msprop:Generator_RowChangedName="tblOficioRowChanged" msprop:Generator_TablePropName="tblOficio" msprop:Generator_RowDeletingName="tblOficioRowDeleting" msprop:Generator_RowChangingName="tblOficioRowChanging" msprop:Generator_RowEvHandlerName="tblOficioRowChangeEventHandler" msprop:Generator_RowDeletedName="tblOficioRowDeleted" msprop:Generator_RowClassName="tblOficioRow" msprop:Generator_UserTableName="tblOficio" msprop:Generator_RowEvArgName="tblOficioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fechaCaptura" msprop:Generator_ColumnVarNameInTable="columnfechaCaptura" msprop:Generator_ColumnPropNameInRow="fechaCaptura" msprop:Generator_ColumnPropNameInTable="fechaCapturaColumn" msprop:Generator_UserColumnName="fechaCaptura" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaAtendido" msprop:Generator_ColumnVarNameInTable="columnfechaAtendido" msprop:Generator_ColumnPropNameInRow="fechaAtendido" msprop:Generator_ColumnPropNameInTable="fechaAtendidoColumn" msprop:Generator_UserColumnName="fechaAtendido" type="xs:string" minOccurs="0" />
+              <xs:element name="turnoDRM" msprop:Generator_ColumnVarNameInTable="columnturnoDRM" msprop:Generator_ColumnPropNameInRow="turnoDRM" msprop:Generator_ColumnPropNameInTable="turnoDRMColumn" msprop:Generator_UserColumnName="turnoDRM" type="xs:string" minOccurs="0" />
+              <xs:element name="turnoSAF" msprop:Generator_ColumnVarNameInTable="columnturnoSAF" msprop:Generator_ColumnPropNameInRow="turnoSAF" msprop:Generator_ColumnPropNameInTable="turnoSAFColumn" msprop:Generator_UserColumnName="turnoSAF" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="asunto" msprop:Generator_ColumnVarNameInTable="columnasunto" msprop:Generator_ColumnPropNameInRow="asunto" msprop:Generator_ColumnPropNameInTable="asuntoColumn" msprop:Generator_UserColumnName="asunto" type="xs:string" minOccurs="0" />
+              <xs:element name="cont" msprop:Generator_ColumnVarNameInTable="columncont" msprop:Generator_ColumnPropNameInRow="cont" msprop:Generator_ColumnPropNameInTable="contColumn" msprop:Generator_UserColumnName="cont" type="xs:string" minOccurs="0" />
+              <xs:element name="diast" msprop:Generator_ColumnVarNameInTable="columndiast" msprop:Generator_ColumnPropNameInRow="diast" msprop:Generator_ColumnPropNameInTable="diastColumn" msprop:Generator_UserColumnName="diast" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

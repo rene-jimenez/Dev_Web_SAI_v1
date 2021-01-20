@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsGastoPorArea" targetNamespace="http://tempuri.org/dtsGastoPorArea.xsd" xmlns:mstns="http://tempuri.org/dtsGastoPorArea.xsd" xmlns="http://tempuri.org/dtsGastoPorArea.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsGastoPorArea" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsGastoPorArea" msprop:Generator_UserDSName="dtsGastoPorArea">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblGastoPorArea" msprop:Generator_TableClassName="tblGastoPorAreaDataTable" msprop:Generator_TableVarName="tabletblGastoPorArea" msprop:Generator_TablePropName="tblGastoPorArea" msprop:Generator_RowDeletingName="tblGastoPorAreaRowDeleting" msprop:Generator_RowChangingName="tblGastoPorAreaRowChanging" msprop:Generator_RowEvHandlerName="tblGastoPorAreaRowChangeEventHandler" msprop:Generator_RowDeletedName="tblGastoPorAreaRowDeleted" msprop:Generator_UserTableName="tblGastoPorArea" msprop:Generator_RowChangedName="tblGastoPorAreaRowChanged" msprop:Generator_RowEvArgName="tblGastoPorAreaRowChangeEvent" msprop:Generator_RowClassName="tblGastoPorAreaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="gasto" msprop:Generator_ColumnVarNameInTable="columngasto" msprop:Generator_ColumnPropNameInRow="gasto" msprop:Generator_ColumnPropNameInTable="gastoColumn" msprop:Generator_UserColumnName="gasto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

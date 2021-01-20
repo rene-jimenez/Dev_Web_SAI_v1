@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF4DA7C8-1481-4BA9-A7E6-C8C0399C403E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CES</RootNamespace>
+    <AssemblyName>CES</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CES.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cadeneroSispro">
+      <HintPath>..\..\..\..\..\Contexto\cadeneroSispro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="afectacionPresupuestal\afectacionPresupuestal.vb" />
+    <Compile Include="afectacionPresupuestal\tipoConsultaAfectacionPresupuestal.vb" />
+    <Compile Include="ajusteArticuloInventario\ajusteArticuloInventario.vb" />
+    <Compile Include="ajusteArticuloInventario\tipoConsultaAjusteArticuloInventario.vb" />
+    <Compile Include="alcance\alcance.vb" />
+    <Compile Include="alcance\tipoConsultaAlcance.vb" />
+    <Compile Include="alcance\tipoEdicionAlcance.vb" />
+    <Compile Include="area\area.vb" />
+    <Compile Include="area\tipoConsultaArea.vb" />
+    <Compile Include="area\tipoEdicionArea.vb" />
+    <Compile Include="articulo\articulo.vb" />
+    <Compile Include="articulo\tipoConsultaArticulo.vb" />
+    <Compile Include="articulo\tipoEdicionArticulo.vb" />
+    <Compile Include="categoria\categoria.vb" />
+    <Compile Include="categoria\tipoConsultaCategoria.vb" />
+    <Compile Include="categoria\tipoEdicionCategoria.vb" />
+    <Compile Include="Class1.vb" />
+    <Compile Include="comprobacion\comprobacion.vb" />
+    <Compile Include="comprobacion\importeComprobacion.vb" />
+    <Compile Include="comprobacion\tipoConsultaComprobacion.vb" />
+    <Compile Include="comprobacion\tipoConsultaImporteComprobacion.vb" />
+    <Compile Include="dashboard\dashboard.vb" />
+    <Compile Include="detalleEntrada\detalleEntrada.vb" />
+    <Compile Include="detalleEntrada\tipoConsultaDetalleEntrada.vb" />
+    <Compile Include="detallePedido\detallePedido.vb" />
+    <Compile Include="detallePedido\detallePedidoParaEntrada.vb" />
+    <Compile Include="detallePedido\tipoConsultaDetallePedido.vb" />
+    <Compile Include="detallePedido\tipoConsultaDetallePedidoParaEntrada.vb" />
+    <Compile Include="detalleSalidaAlmacen\detalleSalidaAlmacen.vb" />
+    <Compile Include="detalleSalidaAlmacen\tipoConsultaDetalleSalidaAlmacen.vb" />
+    <Compile Include="documentoContable\documentoContable.vb" />
+    <Compile Include="documentoContable\tipoConsultaDocumentoContable.vb" />
+    <Compile Include="documentoContable\tipoEdicionDocumentoContable.vb" />
+    <Compile Include="entrada\entrada.vb" />
+    <Compile Include="entrada\tipoConsultaEntrada.vb" />
+    <Compile Include="entrada\tipoEdicionEntrada.vb" />
+    <Compile Include="estatusOficio\estatusOficio.vb" />
+    <Compile Include="estatusOficio\tipoConsultaEstatusOficio.vb" />
+    <Compile Include="estatusOficio\tipoEdicionEstatusOficio.vb" />
+    <Compile Include="firma\firma.vb" />
+    <Compile Include="firma\tipoConsultaFirma.vb" />
+    <Compile Include="firma\tipoEdicionFirma.vb" />
+    <Compile Include="generico\generico.vb" />
+    <Compile Include="generico\tipoConsultaGenerico.vb" />
+    <Compile Include="historial\historial.vb" />
+    <Compile Include="historial\tipoConsultaHistorial.vb" />
+    <Compile Include="iva\iva.vb" />
+    <Compile Include="iva\tipoConsultaIva.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="oficio\oficio.vb" />
+    <Compile Include="oficio\tipoConsultaOficio.vb" />
+    <Compile Include="oficio\tipoEdicionOficio.vb" />
+    <Compile Include="oficio\tipoGuardarOficio.vb" />
+    <Compile Include="pagina\pagina.vb" />
+    <Compile Include="pagina\tipoConsultaPagina.vb" />
+    <Compile Include="partidaPresupuestal\partidaPresupuestal.vb" />
+    <Compile Include="partidaPresupuestal\tipoConsultaPartidaPresupuestal.vb" />
+    <Compile Include="partidaPresupuestal\tipoEdicionPartidaPresupuestal.vb" />
+    <Compile Include="pedido\pedido.vb" />
+    <Compile Include="pedido\tipoConsultaPedido.vb" />
+    <Compile Include="pedido\tipoEdicionPedido.vb" />
+    <Compile Include="Permiso\Permiso.vb" />
+    <Compile Include="Permiso\tipoConsultaPermiso.vb" />
+    <Compile Include="proveedor\proveedor.vb" />
+    <Compile Include="proveedor\tipoConsultaProveedor.vb" />
+    <Compile Include="proveedor\tipoEdicionProveedor.vb" />
+    <Compile Include="reporteAlmacen\reporteAlmacen.vb" />
+    <Compile Include="reporteAlmacen\tipoConsultaReporteAlmacen.vb" />
+    <Compile Include="reporteCompras\reporteCompras.vb" />
+    <Compile Include="reporteCompras\tipoConsultaReporteCompras.vb" />
+    <Compile Include="reporteInventario\reporteSeguimientoxArticulo.vb" />
+    <Compile Include="reporteInventario\tipoConsultaSeguimientoxArticulo.vb" />
+    <Compile Include="reporte\ReporteSolicitudGastos.vb" />
+    <Compile Include="responsable\responsable.vb" />
+    <Compile Include="responsable\tipoConsultaResponsable.vb" />
+    <Compile Include="responsable\tipoEdicionResponsable.vb" />
+    <Compile Include="Rol\Rol.vb" />
+    <Compile Include="Rol\tipoConsultaRol.vb" />
+    <Compile Include="rubroRequerimiento\rubroRequerimiento.vb" />
+    <Compile Include="rubroRequerimiento\tipoConsultaRubroRequerimiento.vb" />
+    <Compile Include="rubroRequerimiento\tipoEdicionRubroRequerimiento.vb" />
+    <Compile Include="salidaAlmacen\salidaAlmacen.vb" />
+    <Compile Include="salidaAlmacen\tipoConsultaSalidaAlmacen.vb" />
+    <Compile Include="sistema\sistema.vb" />
+    <Compile Include="sistema\tipoSistemaConsulta.vb" />
+    <Compile Include="solicitudGasto\solicitudGasto.vb" />
+    <Compile Include="solicitudGasto\solicitudGastoComprobacion.vb" />
+    <Compile Include="solicitudGasto\solicitudGastoComprobacionNoLiberado.vb" />
+    <Compile Include="solicitudGasto\tipoConsultaSolicitudGasto.vb" />
+    <Compile Include="solicitudGasto\tipoEdicionSolicitudGasto.vb" />
+    <Compile Include="telefonoProveedor\telefonoProveedor.vb" />
+    <Compile Include="telefonoProveedor\tipoConsultaTelefonoProveedor.vb" />
+    <Compile Include="telefonoProveedor\tipoEdicionTelefonoProveedor.vb" />
+    <Compile Include="tipoPago\tipoConsultaTipoPago.vb" />
+    <Compile Include="tipoPago\tipoEdicionTipoPago.vb" />
+    <Compile Include="tipoPago\tipoPago.vb" />
+    <Compile Include="tipoPopup\tipoPopup.vb" />
+    <Compile Include="ultimoPrecioArticulo\tipoConsultaUltimoPrecioArticulo.vb" />
+    <Compile Include="ultimoPrecioArticulo\ultimoPrecioArticulo.vb" />
+    <Compile Include="unidadMedida\tipoConsultaUnidadMedida.vb" />
+    <Compile Include="unidadMedida\tipoEdicionUnidadMedida.vb" />
+    <Compile Include="unidadMedida\unidadMedida.vb" />
+    <Compile Include="usuarioAdmin\usuarioAdmin.vb" />
+    <Compile Include="usuarios\usuarios.vb" />
+    <Compile Include="validaEstatusOficio\tipoConsultaValidacion.vb" />
+    <Compile Include="validaEstatusOficio\validarEstatusOficio.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsComprobacion" targetNamespace="http://tempuri.org/dtsComprobacion.xsd" xmlns:mstns="http://tempuri.org/dtsComprobacion.xsd" xmlns="http://tempuri.org/dtsComprobacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsComprobacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsComprobacion" msprop:Generator_UserDSName="dtsComprobacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblComprobacion" msprop:Generator_TableClassName="tblComprobacionDataTable" msprop:Generator_TableVarName="tabletblComprobacion" msprop:Generator_TablePropName="tblComprobacion" msprop:Generator_RowDeletingName="tblComprobacionRowDeleting" msprop:Generator_RowChangingName="tblComprobacionRowChanging" msprop:Generator_RowEvHandlerName="tblComprobacionRowChangeEventHandler" msprop:Generator_RowDeletedName="tblComprobacionRowDeleted" msprop:Generator_UserTableName="tblComprobacion" msprop:Generator_RowChangedName="tblComprobacionRowChanged" msprop:Generator_RowEvArgName="tblComprobacionRowChangeEvent" msprop:Generator_RowClassName="tblComprobacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="concepto" msprop:Generator_ColumnVarNameInTable="columnconcepto" msprop:Generator_ColumnPropNameInRow="concepto" msprop:Generator_ColumnPropNameInTable="conceptoColumn" msprop:Generator_UserColumnName="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="autorizo" msprop:Generator_ColumnVarNameInTable="columnautorizo" msprop:Generator_ColumnPropNameInRow="autorizo" msprop:Generator_ColumnPropNameInTable="autorizoColumn" msprop:Generator_UserColumnName="autorizo" type="xs:string" minOccurs="0" />
+              <xs:element name="marcaAgua" msprop:Generator_ColumnVarNameInTable="columnmarcaAgua" msprop:Generator_ColumnPropNameInRow="marcaAgua" msprop:Generator_ColumnPropNameInTable="marcaAguaColumn" msprop:Generator_UserColumnName="marcaAgua" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaElabora" msprop:Generator_ColumnVarNameInTable="columnfechaElabora" msprop:Generator_ColumnPropNameInRow="fechaElabora" msprop:Generator_ColumnPropNameInTable="fechaElaboraColumn" msprop:Generator_UserColumnName="fechaElabora" type="xs:string" minOccurs="0" />
+              <xs:element name="responsable" msprop:Generator_ColumnVarNameInTable="columnresponsable" msprop:Generator_ColumnPropNameInRow="responsable" msprop:Generator_ColumnPropNameInTable="responsableColumn" msprop:Generator_UserColumnName="responsable" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

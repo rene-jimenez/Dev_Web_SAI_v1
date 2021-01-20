@@ -1,0 +1,659 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="CPD.Site" %>
+<!DOCTYPE html>
+<html>
+	<head runat="server">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SAI ULTIMATE</title>
+		<asp:ContentPlaceHolder ID="head" runat="server">
+		</asp:ContentPlaceHolder>
+		<link href='<%#Page.ResolveUrl("~/css/animate.min.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/sweet-alert.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/jquery.mCustomScrollbar.min.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/font-awesome.min.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/datepicker3.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/select2.css")%>' rel="stylesheet" />
+		<link href='<%#Page.ResolveUrl("~/css/main1.css")%>' rel="stylesheet" />
+		<!-- 1 -->
+		<link href='<%#Page.ResolveUrl("~/css/main2.css")%>' rel="stylesheet" />
+		<!-- 2 -->
+		<link href='<%#Page.ResolveUrl("~/css/material-design-iconic-font.min.css")%>' rel="stylesheet" />
+	</head>
+	<body>
+		<form id="form1" runat="server">
+			<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+			<header id="header" class="clearfix" data-current-skin="black">
+				<ul class="header-inner">
+					<li id="menu-trigger" data-trigger="#sidebar">
+						<div class="line-wrap">
+							<div class="line top"></div>
+							<div class="line center"></div>
+							<div class="line bottom"></div>
+						</div>
+					</li>
+					<li class="hidden-xs">
+						<div class="lvh-label hidden-xs">
+							<div class="lv-avatar pull-left">
+								<asp:Image ID="imgLogoTop" ImageUrl="~/img/logo1.png" runat="server" />
+							</div>
+							<span style="font-size: x-large; color: white; text-transform: uppercase;">
+								<strong>
+									<asp:Label ID="lblNombreSistema" runat="server" />
+								</strong>
+								-
+								<asp:Label ID="lblAñoSistema" runat="server" />
+							</span>
+						</div>
+					</li>
+					<li class="pull-right">
+						<ul class="top-menu">
+							<li id="toggle-width">
+								<div class="toggle-switch">
+									<input id="tw-switch" type="checkbox" hidden="hidden">
+									<label for="tw-switch" class="ts-helper"></label>
+								</div>
+							</li>
+							<li class="dropdown clearfix" id="liCatalogos" runat="server">
+								<a data-toggle="dropdown" class="tm-message" href="" aria-expanded="false"><i class="tm-icon zmdi zmdi-collection-bookmark"></i></a>
+								<div class="dropdown-menu dropdown-menu-lg pull-right">
+									<div class="listview">
+										<div class="lv-header">Catálogos 
+										</div>
+										<div tabindex="12">
+											<ul class="dropdown-menu" style="width: 100%;">
+												<li class="sub-menu" role="presentation" id="liCatArea" runat="server">
+													<asp:LinkButton ID="btnArea" role="menuitem" TabIndex="-1" runat="server">Área</asp:LinkButton>
+													<ul>
+														<li>
+															<asp:LinkButton ID="btnAltaArea" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-check"></i> Agregar</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnConsultarArea" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-search"></i> Consultar</asp:LinkButton>
+														</li>
+													</ul>
+												</li>
+												<li class="sub-menu" role="presentation" id="liCatArticulo" runat="server">
+													<asp:LinkButton ID="btnArticulo" role="menuitem" TabIndex="-1" runat="server">Artículo</asp:LinkButton>
+													<ul>
+														<li>
+															<asp:LinkButton ID="btnAltaArticulo" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-check"></i> Agregar</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnConsultarArticulo" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-search"></i> Consultar</asp:LinkButton>
+														</li>
+													</ul>
+												</li>
+												<%--<li role="presentation">
+													<asp:LinkButton ID="btnPartidaPresupuestal" role="menuitem" TabIndex="-1" runat="server">Partida presupuestal</asp:LinkButton>
+												</li>--%>
+												<li class="sub-menu" role="presentation" id="liCatProveedor" runat="server">
+													<asp:LinkButton ID="btnProveedorGral" role="menuitem" TabIndex="-1" runat="server">Proveedor</asp:LinkButton>
+													<ul>
+														<li>
+															<asp:LinkButton ID="btnAltaProveedor" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-check"></i> Agregar</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnConsultarProveedor" ForeColor="#737373"  role="menuitem" TabIndex="-1" runat="server"><i class="zmdi zmdi-search"></i> Consultar</asp:LinkButton>
+														</li>
+													</ul>
+												</li>
+												<li role="presentation">
+													<asp:LinkButton ID="btnRubros" role="menuitem" TabIndex="-1" runat="server">Rubros</asp:LinkButton>
+												</li>
+												<li class="divider hidden-xs"></li>
+												<%--<li class="sub-menu" role="presentation" id="liCatEstaticos" runat="server">
+													<asp:LinkButton ID="btnCTE" role="menuitem" TabIndex="-1" runat="server">Catálogos estaticos</asp:LinkButton>
+													<ul>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnResponsable" role="menuitem" TabIndex="-1" runat="server">Responsable</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnCategoria" role="menuitem" TabIndex="-1" runat="server">Categoría</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnFirmas" role="menuitem" TabIndex="-1" runat="server">Firmas</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnDocContable" role="menuitem" TabIndex="-1" runat="server">Doc. contable</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnUnidadMedida" role="menuitem" TabIndex="-1" runat="server">Unidad medida</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnTipoPago" role="menuitem" TabIndex="-1" runat="server">Tipo pago</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ForeColor="#737373" ID="btnEstatusOficio" role="menuitem" TabIndex="-1" runat="server">Estatus oficio</asp:LinkButton>
+														</li>
+													</ul>
+												</li>--%>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+<%--							<li class="dropdown clearfix" id="liReportes" runat="server">
+								<a data-toggle="dropdown" class="tm-message" href="" aria-expanded="false"><i class="tm-icon  zmdi zmdi-equalizer"></i></a>
+								<div class="dropdown-menu dropdown-menu-lg pull-right">
+									<div class="listview">
+										<div class="lv-header">Reportes 
+										</div>
+										<div tabindex="12">
+											<ul class="dropdown-menu" style="width: 100%;">
+												<li class="sub-menu" id="liReporteRM" runat="server">
+													<a href="usuario/frmConsultaUsuario.aspx">Recursos Materiales</a>
+													<ul>
+														<li>
+															<asp:LinkButton ID="btnReporteOficioAtendido" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Oficios atendidos</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteOficioOficioPorAtender" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Oficios por atender</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteComprasArea" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Compras por área</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteComprasProveedor" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Compras por proveedor</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteRecNoLiberado" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Recurso no liberado</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteRecLiberadoNoComprobado" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Recurso liberado pendiente comprobar</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnReporteRecLiberadoComprobado" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Recurso liberado y comprobado </asp:LinkButton>
+														</li>
+                                                       
+													</ul>
+												</li>
+												<li class="divider hidden-xs"></li>
+												<li class="sub-menu" id="liReportesAlmacen" runat="server">
+													<a href="usuario/frmConsultaUsuario.aspx">Almacen</a>
+													<ul>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenConsumoArea" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Consumo por área</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="lnkAlmacenEntradaArticulos" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Entrada de artículos</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenEntradaArticulo" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Entrada por artículo - proveedor</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenEntradaPorCategoria" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Entrada por categoría</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenGastoPorArea" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Gasto por área</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenInvetario" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Inventario por categoría</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenListaArticulos" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Lista artículos</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="lnkAlmacenSalidaArticulos" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Salida de artículos</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenSalidaPorArea" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Salida por área</asp:LinkButton>
+														</li>
+                                                        <li>
+															<asp:LinkButton ID="lnkAlmacenSalidaPorCategoria" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Salida por categoría</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="lnkSeguimientoxArticulo" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Seguimiento por artículo</asp:LinkButton>
+														</li>	
+                                                        <li>
+															<asp:LinkButton ID="lnkCodigosBarras" ForeColor="#737373" runat="server"><i class="zmdi zmdi-trending-up"></i> Codigos de Barras </asp:LinkButton>
+														</li>										
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>--%>
+							<li class="dropdown clearfix" id="liAdministrador" runat="server">
+								<a data-toggle="dropdown" class="tm-message" href="" aria-expanded="false"><i class="tm-icon zmdi zmdi-pin-account"></i></a>
+								<div class="dropdown-menu dropdown-menu-lg pull-right">
+									<div class="listview">
+										<div class="lv-header">Administración 
+										</div>
+										<div tabindex="12">
+											<ul class="dropdown-menu" style="width: 100%;">
+												<li class="sub-menu" id="liUsuario" runat="server">
+													<a href="usuario/frmConsultaUsuario.aspx"><i class="zmdi zmdi-account"></i> Usuario</a>
+													<ul class="text text-danger">
+														<li>
+															<asp:LinkButton ID="btnAltaUsuario" runat="server" ForeColor="#737373">
+																<i class="zmdi zmdi-check"></i> Agregar
+															</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnConsultaUsuario" runat="server" ForeColor="#737373">
+																<i class="fa fa-search"></i> Consulta
+															</asp:LinkButton>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<asp:LinkButton ID="btnRol" runat="server">
+														<i class="fa fa-briefcase"></i> Rol
+													</asp:LinkButton>
+												</li>
+												<li>
+													<asp:LinkButton ID="btnPermiso" runat="server">
+														<i class="fa fa-unlock"></i> Permiso
+													</asp:LinkButton>
+												</li>
+												<li>
+													<asp:LinkButton ID="btnPagina" runat="server">
+														<i class="zmdi zmdi-file-text"></i> Página
+													</asp:LinkButton>
+												</li>
+                                                <li class="sub-menu" id="liSistema" runat="server">
+													<a><i class="zmdi zmdi-labels"></i> Sistema</a>
+													<ul class="text text-danger">
+														<li>
+															<asp:LinkButton ID="btnAltaSistema" runat="server" ForeColor="#737373">
+																<i class="zmdi zmdi-check"></i> Agregar
+															</asp:LinkButton>
+														</li>
+														<li>
+															<asp:LinkButton ID="btnConsultaSistema" runat="server" ForeColor="#737373">
+																<i class="fa fa-search"></i> Consulta
+															</asp:LinkButton>
+														</li>
+													</ul>
+												</li>
+												<li><asp:LinkButton ID="btnHistorial" runat="server"><i class="zmdi zmdi-hourglass"></i> Historial</asp:LinkButton></li>
+												<li class="divider hidden-xs"></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown clearfix">
+								<a data-toggle="dropdown" class="tm-message" href="" aria-expanded="false"><i class="tm-icon zmdi zmdi-more-vert"></i></a>
+								<div class="dropdown-menu dropdown-menu-lg pull-right">
+									<div class="listview">
+										<div class="lv-header">
+											Configuración
+										</div>
+										<div tabindex="12">
+											<ul class="dropdown-menu" style="width: 100%;">
+												<li>
+													<a data-action="fullscreen" href=""><i class="zmdi zmdi-fullscreen-alt"></i> Pantalla completa</a>
+												</li>
+												<li>
+													<asp:LinkButton ID="btnPerfilUsuarioMenuIzquierdo" runat="server" ForeColor="#737373">
+														<i class="fa fa-users"></i> Mi perfil
+													</asp:LinkButton>
+												</li>
+												<li>
+													<asp:LinkButton runat="server" ID="btnMenuArribaCerrarSesion" class="btn btn-default btn-flat">
+														<i class="zmdi zmdi-sign-in"></i> Cerrar Sesión
+													</asp:LinkButton>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</header>
+			<section id="main" data-layout="layout-1">
+				<aside id="sidebar" class="sidebar c-overflow">
+					<div class="profile-menu">
+						<a href="#">
+							<div class="profile-pic">
+								<asp:Image runat="server" ID="imgAvatar" />
+							</div>
+							<div class="profile-info">
+								<asp:Label ID="lblNombreUsuario" runat="server" />
+								<i class="zmdi zmdi-caret-down"></i>
+							</div>
+						</a>
+						<ul class="main-menu">
+							<li>
+								<a href="usuario/frmPerfil.aspx"><i class="zmdi zmdi-face"></i>Ver perfil</a>
+							</li>
+							<li>
+								<asp:LinkButton runat="server" ID="btnCerrarSesionLeft">
+									<i class="zmdi zmdi-sign-in"></i> Cerrar Sesión
+								</asp:LinkButton>
+							</li>
+						</ul>
+					</div>
+					<ul class="main-menu">
+						<li class="active">
+							<asp:LinkButton id="lnkPrincipal" runat="server" OnClick="lnkPrincipal_Click"><i class="zmdi zmdi-home"></i> Principal</asp:LinkButton>
+						</li>
+						<li class="sub-menu" id="liRecMat" runat="server">
+							<a href="#"><i class="zmdi zmdi-shopping-cart "></i> Recursos materiales</a>
+							<ul style="display: none;">
+								<li class="sub-menu" id="liRMOficio" runat="server">
+									<a href="#"><i class="zmdi zmdi-file-text"></i> Oficio</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAltaOficio" runat="server"><i class="zmdi zmdi-file-plus"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnComplementarOficio" runat="server"><i class="zmdi zmdi-file-text"></i> Complementar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarOficio" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarOficio" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu" id="liRMPedido" runat="server">
+									<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Pedido</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarPedido" runat="server"><i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnAgregarSinDRMPedido" runat="server"><i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar sin DRM </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarPedido" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarPedido" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+									</ul>
+								</li>
+								<%--<li class="sub-menu" id="liRMSolicitudGasto" runat="server">
+									<a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Solicitud de gasto</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarSolicitudGasto" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnAgregarSolicitudConDocumentoInterno" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar con documento interno </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnActualizarSolicitudGasto" runat="server"><i class="fa fa-refresh" aria-hidden="true"></i> Actualizar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarSolicitudGasto" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarSolicitudGasto" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnCancelarSolicitudGasto" runat="server"><i class="fa fa-ban" aria-hidden="true"></i> Cancelar </asp:LinkButton>
+										</li>
+									</ul>
+								</li>--%>
+								<%--<li class="sub-menu" id="liRMAfectacionPresupuestal" runat="server">
+									<a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Afectación presupuestal</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarAfectacion" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarAfectacion" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarAfectacion" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnSustituirAfectacion" runat="server"><i class="fa fa-ban" aria-hidden="true"></i> Sustituir </asp:LinkButton>
+										</li>
+									</ul>
+								</li>--%>
+								<%--<li class="sub-menu" id="liRMAlcance" runat="server">
+									<a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Alcance</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarAlcance" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnActualizarAlcance" runat="server"><i class="fa fa-refresh" aria-hidden="true"></i> Actualizar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarAlcance" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarAlcance" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnCancelarAlcance" runat="server"><i class="fa fa-times" aria-hidden="true"></i> Cancelar </asp:LinkButton>
+										</li>
+									</ul>
+								</li>--%>
+								<%--<li class="sub-menu" id="liRMComprobacion" runat="server">
+									<a href="#"><i class="fa fa-check-square-o" aria-hidden="true"></i> Comprobación</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarComprobacion" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar </asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarComprobacion" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar </asp:LinkButton>
+										</li>
+									</ul>
+								</li>--%>
+								</ul>
+						</li>
+						<li class="sub-menu" id="liAlmacen" runat="server">
+							<a href="#"><i class="zmdi zmdi-dropbox"></i>Almacen</a>
+							<ul style="display: none;">
+								<li class="sub-menu" id="liAlmacenEntrada" runat="server">
+									<a href="#"><i class="zmdi zmdi-shopping-basket"></i> Entrada</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarEntrada" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnActualizarEntrada" runat="server"><i class="fa fa-refresh" aria-hidden="true"></i> Actualizar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarEntrada" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarEntrada" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar</asp:LinkButton>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu" id="liAlmacenSalida" runat="server">
+									<a href="#"><i class="zmdi zmdi-shopping-cart"></i> Salida</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAgregarSalida" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Agregar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEditarSalida" runat="server"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarSalida" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar</asp:LinkButton>
+										</li>
+									</ul>
+								</li>
+								<%--<li class="sub-menu" id="liAlmacenInventario" runat="server">
+									<a href="#"><i class="zmdi zmdi-collection-text"></i> Inventario</a>
+									<ul style="display: none;">
+										<li>
+											<asp:LinkButton ID="btnAjustarInventario" runat="server"><i class="fa fa-calculator" aria-hidden="true"></i> Ajustar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnConsultarInventario" runat="server"><i class="fa fa-search" aria-hidden="true"></i> Consultar</asp:LinkButton>
+										</li>
+										<li>
+											<asp:LinkButton ID="btnEliminarInventario" runat="server"><i class="fa fa-ban" aria-hidden="true"></i> Eliminar</asp:LinkButton>
+										</li>
+									</ul>
+								</li>--%>
+							</ul>
+						</li>
+					</ul>
+				</aside>
+				<section id="content">
+					<asp:UpdatePanel runat="server" ID="udpPricipal">
+						<ContentTemplate>
+							<asp:ContentPlaceHolder ID="conUpdatePanel" runat="server" />
+						</ContentTemplate>
+					</asp:UpdatePanel>
+					<asp:ContentPlaceHolder ID="sinUpdatePanel" runat="server" />
+				</section>
+				<!--termina seccion content-->
+			</section>
+			<!--termina seccion main-->
+			<asp:UpdatePanel ID="udpMaster" runat="server" UpdateMode="Conditional">
+				<ContentTemplate>
+					<div class="modal fade" id="myModalRespuesta" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class='modal-dialog' id="contenidoModal">
+							<asp:Literal ID="ltResultado" runat="server"></asp:Literal>
+						</div>
+					</div>
+				</ContentTemplate>
+			</asp:UpdatePanel>
+			<footer id="footer">
+			<%--	© 2016-2017 | SAI ULTIMATE | Desarrollado por Deep <asp:linkButton ID="lnkInformatica" runat="server" >I</asp:linkButton>nformática para la Dirección de Recursos Materiales.
+			--%>	<ul class="f-menu">
+					<li>
+						<asp:linkButton ID="lnkPrincipalFondo" runat="server" OnClick="lnkPrincipalFondo_Click">Principal</asp:linkButton>
+					</li>
+					<li>
+						<asp:LinkButton ID="lnkReportes" runat="server" OnClick="lnkReportes_Click" >Reportes</asp:LinkButton>
+					</li>
+					<li><a href="#">Soporte</a></li>
+				</ul>
+			</footer>
+		</form>
+		<!-- Page Loader -->
+		<div class="page-loader">
+			<div class="preloader pls-blue">
+				<svg class="pl-circular" viewBox="25 25 50 50">
+					<circle class="plc-path" cx="50" cy="50" r="20" />
+				</svg>
+				<p>Por favor espere...</p>
+			</div>
+		</div>
+		<!-- Older IE warning message -->
+		<!--[if lt IE 9]>
+		<div class="ie-warning">
+			<h1 class="c-white">Cuidado!!</h1>
+			<p>Estás usando una versión muy antigua de Internet Explorer <br/>por favor usa cualquiera de los siguientes navegadores web.</p>
+			<div class="iew-container">
+				<ul class="iew-download">
+					<li>
+						<a href="http://www.google.com/chrome/">
+							<img src='<%=Page.ResolveUrl("~/img/browsers/chrome.png")%>' alt="">
+							<div>Chrome</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.mozilla.org/en-US/firefox/new/">
+							<img src='<%=Page.ResolveUrl("~/img/browsers/firefox.png")%>' alt="">
+							<div>Firefox</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.opera.com">
+							<img src='<%=Page.ResolveUrl("~/img/browsers/opera.png")%>' alt="">
+							<div>Opera</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.apple.com/safari/">
+							<img src='<%=Page.ResolveUrl("~/img/browsers/safari.png")%>' alt="">
+							<div>Safari</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+							<img src='<%=Page.ResolveUrl("~/img/browsers/ie.png")%>' alt="">
+							<div>IE (New)</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p>Disculpa las molestias!</p>
+		</div>
+		<![endif]-->
+		<!-- Javascript Libraries -->
+		<script src="<%=Page.ResolveUrl("~/js/jquery-2.1.1.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/waves.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/bootstrap.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/bootstrap-datepicker.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/bootstrap-timepicker.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/select2.full.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.dataTables.min.js")%>"></script>
+		<script src="<%=Page.ResolveUrl("~/js/dataTables.bootstrap.min.js")%>"></script>
+		<script src="<%=Page.ResolveUrl("~/js/bootstrap-growl.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.inputmask.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.bootstrap.wizard.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.mCustomScrollbar.concat.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/functions.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/sweetalert.min.js")%>" type="text/javascript"></script>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.numeric.js")%>" type="text/javascript"></script>
+		<asp:ContentPlaceHolder ID="jquery" runat="server" />
+		<!-- Placeholder for IE9 -->
+		<!--[if IE 9 ]>
+		<script src="<%=Page.ResolveUrl("~/js/jquery.placeholder.min.js")%>" type="text/javascript"></script>
+		<![endif]-->
+		<asp:ContentPlaceHolder ID="scripts" runat="server" />
+		<script>
+			$(".conVentanaFecha").datepicker({ format: 'dd/mm/yyyy', autoclose: true });
+			$(".conFiltro").select2();
+			$(".conMascaraFecha").inputmask("99/99/9999");
+			$(".conMascaraHora").inputmask("99:99");
+			$(".conMascaraFechaHora").inputmask("99/99/9999 99:99");
+			$(".conMascaraNumero").inputmask("99999999");
+			$(".conMascaraTelefono").inputmask("(999) 999 99-99");
+			$(".conMascaraCodigoPostal").inputmask("99999");
+			$(".soloNumeros").numeric();
+			
+			$(function () {
+			    $(".listaConFiltro").DataTable();
+			    $('.listaSinFiltro').DataTable({
+			        "paging": true,
+			        "lengthChange": false,
+			        "searching": false,
+			        "ordering": true,
+			        "info": true,
+			        "autoWidth": true
+			    });
+			
+			   
+			
+			
+			    $('.listaConScrollVertical').DataTable({
+			        "scrollY": "300px",
+			        "scrollCollapse": true,
+			        "ordering": true,
+			        "paging": false,
+			        "autoWidth": true
+			    });
+			});
+			
+		</script>
+		<script>
+			function muestra(contenido) {
+			    $('#contenidoModal').empty();
+			    $('#contenidoModal').append(contenido);
+			    $('#myModalRespuesta').modal('show');
+			}
+		</script>
+	</body>
+</html>
+
+
+<%-- <script type="text/javascript">
+           var prm = Sys.WebForms.PageRequestManager.getInstance();
+           if (prm != null) {
+               prm.add_endRequest(function (sender, e) {
+                   if (sender._postBackSettings.panelsToUpdate != null) {
+                        $(".listaConFiltro").DataTable();
+                   }
+               });
+           };
+</script>--%>

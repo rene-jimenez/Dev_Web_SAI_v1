@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsCodigo" targetNamespace="http://tempuri.org/dtsCodigo.xsd" xmlns:mstns="http://tempuri.org/dtsCodigo.xsd" xmlns="http://tempuri.org/dtsCodigo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsCodigo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsCodigo" msprop:Generator_UserDSName="dtsCodigo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblCodigoBarras" msprop:Generator_TableClassName="tblCodigoBarrasDataTable" msprop:Generator_TableVarName="tabletblCodigoBarras" msprop:Generator_RowChangedName="tblCodigoBarrasRowChanged" msprop:Generator_TablePropName="tblCodigoBarras" msprop:Generator_RowDeletingName="tblCodigoBarrasRowDeleting" msprop:Generator_RowChangingName="tblCodigoBarrasRowChanging" msprop:Generator_RowEvHandlerName="tblCodigoBarrasRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCodigoBarrasRowDeleted" msprop:Generator_RowClassName="tblCodigoBarrasRow" msprop:Generator_UserTableName="tblCodigoBarras" msprop:Generator_RowEvArgName="tblCodigoBarrasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" msprop:Generator_UserColumnName="numero" type="xs:string" minOccurs="0" />
+              <xs:element name="categoria" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_UserColumnName="categoria" type="xs:string" minOccurs="0" />
+              <xs:element name="codigoBarras" msprop:Generator_ColumnVarNameInTable="columncodigoBarras" msprop:Generator_ColumnPropNameInRow="codigoBarras" msprop:Generator_ColumnPropNameInTable="codigoBarrasColumn" msprop:Generator_UserColumnName="codigoBarras" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

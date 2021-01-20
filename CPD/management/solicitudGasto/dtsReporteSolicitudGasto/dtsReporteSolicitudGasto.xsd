@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsReporteSolicitudGasto" targetNamespace="http://tempuri.org/dtsReporteSolicitudGasto.xsd" xmlns:mstns="http://tempuri.org/dtsReporteSolicitudGasto.xsd" xmlns="http://tempuri.org/dtsReporteSolicitudGasto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsReporteSolicitudGasto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsReporteSolicitudGasto" msprop:Generator_UserDSName="dtsReporteSolicitudGasto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblReporteSolicitudGasto" msprop:Generator_TableClassName="tblReporteSolicitudGastoDataTable" msprop:Generator_TableVarName="tabletblReporteSolicitudGasto" msprop:Generator_TablePropName="tblReporteSolicitudGasto" msprop:Generator_RowDeletingName="tblReporteSolicitudGastoRowDeleting" msprop:Generator_RowChangingName="tblReporteSolicitudGastoRowChanging" msprop:Generator_RowEvHandlerName="tblReporteSolicitudGastoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblReporteSolicitudGastoRowDeleted" msprop:Generator_UserTableName="tblReporteSolicitudGasto" msprop:Generator_RowChangedName="tblReporteSolicitudGastoRowChanged" msprop:Generator_RowEvArgName="tblReporteSolicitudGastoRowChangeEvent" msprop:Generator_RowClassName="tblReporteSolicitudGastoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="turnoDRM" msprop:Generator_ColumnVarNameInTable="columnturnoDRM" msprop:Generator_ColumnPropNameInRow="turnoDRM" msprop:Generator_ColumnPropNameInTable="turnoDRMColumn" msprop:Generator_UserColumnName="turnoDRM" type="xs:string" minOccurs="0" />
+              <xs:element name="turnoSAF" msprop:Generator_ColumnVarNameInTable="columnturnoSAF" msprop:Generator_ColumnPropNameInRow="turnoSAF" msprop:Generator_ColumnPropNameInTable="turnoSAFColumn" msprop:Generator_UserColumnName="turnoSAF" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaElaboracion" msprop:Generator_ColumnVarNameInTable="columnfechaElaboracion" msprop:Generator_ColumnPropNameInRow="fechaElaboracion" msprop:Generator_ColumnPropNameInTable="fechaElaboracionColumn" msprop:Generator_UserColumnName="fechaElaboracion" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="cargoPresupuestal" msprop:Generator_ColumnVarNameInTable="columncargoPresupuestal" msprop:Generator_ColumnPropNameInRow="cargoPresupuestal" msprop:Generator_ColumnPropNameInTable="cargoPresupuestalColumn" msprop:Generator_UserColumnName="cargoPresupuestal" type="xs:string" minOccurs="0" />
+              <xs:element name="partidaPresupuestal" msprop:Generator_ColumnVarNameInTable="columnpartidaPresupuestal" msprop:Generator_ColumnPropNameInRow="partidaPresupuestal" msprop:Generator_ColumnPropNameInTable="partidaPresupuestalColumn" msprop:Generator_UserColumnName="partidaPresupuestal" type="xs:string" minOccurs="0" />
+              <xs:element name="importe" msprop:Generator_ColumnVarNameInTable="columnimporte" msprop:Generator_ColumnPropNameInRow="importe" msprop:Generator_ColumnPropNameInTable="importeColumn" msprop:Generator_UserColumnName="importe" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" msprop:Generator_ColumnVarNameInTable="columnconcepto" msprop:Generator_ColumnPropNameInRow="concepto" msprop:Generator_ColumnPropNameInTable="conceptoColumn" msprop:Generator_UserColumnName="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="folioCaja" msprop:Generator_ColumnVarNameInTable="columnfolioCaja" msprop:Generator_ColumnPropNameInRow="folioCaja" msprop:Generator_ColumnPropNameInTable="folioCajaColumn" msprop:Generator_UserColumnName="folioCaja" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaRecepcion" msprop:Generator_ColumnVarNameInTable="columnfechaRecepcion" msprop:Generator_ColumnPropNameInRow="fechaRecepcion" msprop:Generator_ColumnPropNameInTable="fechaRecepcionColumn" msprop:Generator_UserColumnName="fechaRecepcion" type="xs:string" minOccurs="0" />
+              <xs:element name="autoriza" msprop:Generator_ColumnVarNameInTable="columnautoriza" msprop:Generator_ColumnPropNameInRow="autoriza" msprop:Generator_ColumnPropNameInTable="autorizaColumn" msprop:Generator_UserColumnName="autoriza" type="xs:string" minOccurs="0" />
+              <xs:element name="importeCadena" msprop:Generator_ColumnVarNameInTable="columnimporteCadena" msprop:Generator_ColumnPropNameInRow="importeCadena" msprop:Generator_ColumnPropNameInTable="importeCadenaColumn" msprop:Generator_UserColumnName="importeCadena" type="xs:string" minOccurs="0" />
+              <xs:element name="claveArea" msprop:Generator_ColumnVarNameInTable="columnclaveArea" msprop:Generator_ColumnPropNameInRow="claveArea" msprop:Generator_ColumnPropNameInTable="claveAreaColumn" msprop:Generator_UserColumnName="claveArea" type="xs:string" minOccurs="0" />
+              <xs:element name="numeroPartidaPresupuestal" msprop:Generator_ColumnVarNameInTable="columnnumeroPartidaPresupuestal" msprop:Generator_ColumnPropNameInRow="numeroPartidaPresupuestal" msprop:Generator_ColumnPropNameInTable="numeroPartidaPresupuestalColumn" msprop:Generator_UserColumnName="numeroPartidaPresupuestal" type="xs:string" minOccurs="0" />
+              <xs:element name="marcaAgua" msprop:Generator_ColumnVarNameInTable="columnmarcaAgua" msprop:Generator_ColumnPropNameInRow="marcaAgua" msprop:Generator_ColumnPropNameInTable="marcaAguaColumn" msprop:Generator_UserColumnName="marcaAgua" type="xs:string" minOccurs="0" />
+              <xs:element name="folioTesoreria" msprop:Generator_ColumnVarNameInTable="columnfolioTesoreria" msprop:Generator_ColumnPropNameInRow="folioTesoreria" msprop:Generator_ColumnPropNameInTable="folioTesoreriaColumn" msprop:Generator_UserColumnName="folioTesoreria" type="xs:string" minOccurs="0" />
+              <xs:element name="sistema" msprop:Generator_ColumnVarNameInTable="columnsistema" msprop:Generator_ColumnPropNameInRow="sistema" msprop:Generator_ColumnPropNameInTable="sistemaColumn" msprop:Generator_UserColumnName="sistema" type="xs:string" minOccurs="0" />
+              <xs:element name="ImpresoPor" msprop:Generator_ColumnVarNameInTable="columnImpresoPor" msprop:Generator_ColumnPropNameInRow="ImpresoPor" msprop:Generator_ColumnPropNameInTable="ImpresoPorColumn" msprop:Generator_UserColumnName="ImpresoPor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsReporteEntradaArticulo" targetNamespace="http://tempuri.org/dtsReporteEntradaArticulo.xsd" xmlns:mstns="http://tempuri.org/dtsReporteEntradaArticulo.xsd" xmlns="http://tempuri.org/dtsReporteEntradaArticulo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsReporteEntradaArticulo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsReporteEntradaArticulo" msprop:Generator_UserDSName="dtsReporteEntradaArticulo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblReporteEntradaArticulo" msprop:Generator_TableClassName="tblReporteEntradaArticuloDataTable" msprop:Generator_TableVarName="tabletblReporteEntradaArticulo" msprop:Generator_RowChangedName="tblReporteEntradaArticuloRowChanged" msprop:Generator_TablePropName="tblReporteEntradaArticulo" msprop:Generator_RowDeletingName="tblReporteEntradaArticuloRowDeleting" msprop:Generator_RowChangingName="tblReporteEntradaArticuloRowChanging" msprop:Generator_RowEvHandlerName="tblReporteEntradaArticuloRowChangeEventHandler" msprop:Generator_RowDeletedName="tblReporteEntradaArticuloRowDeleted" msprop:Generator_RowClassName="tblReporteEntradaArticuloRow" msprop:Generator_UserTableName="tblReporteEntradaArticulo" msprop:Generator_RowEvArgName="tblReporteEntradaArticuloRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombreArticulo" msprop:Generator_ColumnVarNameInTable="columnnombreArticulo" msprop:Generator_ColumnPropNameInRow="nombreArticulo" msprop:Generator_ColumnPropNameInTable="nombreArticuloColumn" msprop:Generator_UserColumnName="nombreArticulo" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaEntrada" msprop:Generator_ColumnVarNameInTable="columnfechaEntrada" msprop:Generator_ColumnPropNameInRow="fechaEntrada" msprop:Generator_ColumnPropNameInTable="fechaEntradaColumn" msprop:Generator_UserColumnName="fechaEntrada" type="xs:string" minOccurs="0" />
+              <xs:element name="proveedor" msprop:Generator_ColumnVarNameInTable="columnproveedor" msprop:Generator_ColumnPropNameInRow="proveedor" msprop:Generator_ColumnPropNameInTable="proveedorColumn" msprop:Generator_UserColumnName="proveedor" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="precioUnitario" msprop:Generator_ColumnVarNameInTable="columnprecioUnitario" msprop:Generator_ColumnPropNameInRow="precioUnitario" msprop:Generator_ColumnPropNameInTable="precioUnitarioColumn" msprop:Generator_UserColumnName="precioUnitario" type="xs:double" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+              <xs:element name="fechaA" msprop:Generator_ColumnVarNameInTable="columnfechaA" msprop:Generator_ColumnPropNameInRow="fechaA" msprop:Generator_ColumnPropNameInTable="fechaAColumn" msprop:Generator_UserColumnName="fechaA" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaB" msprop:Generator_ColumnVarNameInTable="columnfechaB" msprop:Generator_ColumnPropNameInRow="fechaB" msprop:Generator_ColumnPropNameInTable="fechaBColumn" msprop:Generator_UserColumnName="fechaB" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsSolicitudGastoLiberado" targetNamespace="http://tempuri.org/dtsSolicitudGastoLiberado.xsd" xmlns:mstns="http://tempuri.org/dtsSolicitudGastoLiberado.xsd" xmlns="http://tempuri.org/dtsSolicitudGastoLiberado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsSolicitudGastoLiberado" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsSolicitudGastoLiberado" msprop:Generator_UserDSName="dtsSolicitudGastoLiberado">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblSolGastoLiberado" msprop:Generator_TableClassName="tblSolGastoLiberadoDataTable" msprop:Generator_TableVarName="tabletblSolGastoLiberado" msprop:Generator_TablePropName="tblSolGastoLiberado" msprop:Generator_RowDeletingName="tblSolGastoLiberadoRowDeleting" msprop:Generator_RowChangingName="tblSolGastoLiberadoRowChanging" msprop:Generator_RowEvHandlerName="tblSolGastoLiberadoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblSolGastoLiberadoRowDeleted" msprop:Generator_UserTableName="tblSolGastoLiberado" msprop:Generator_RowChangedName="tblSolGastoLiberadoRowChanged" msprop:Generator_RowEvArgName="tblSolGastoLiberadoRowChangeEvent" msprop:Generator_RowClassName="tblSolGastoLiberadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="turnoSAF" msprop:Generator_ColumnVarNameInTable="columnturnoSAF" msprop:Generator_ColumnPropNameInRow="turnoSAF" msprop:Generator_ColumnPropNameInTable="turnoSAFColumn" msprop:Generator_UserColumnName="turnoSAF" type="xs:string" minOccurs="0" />
+              <xs:element name="turnoDRM" msprop:Generator_ColumnVarNameInTable="columnturnoDRM" msprop:Generator_ColumnPropNameInRow="turnoDRM" msprop:Generator_ColumnPropNameInTable="turnoDRMColumn" msprop:Generator_UserColumnName="turnoDRM" type="xs:string" minOccurs="0" />
+              <xs:element name="folioTes" msprop:Generator_ColumnVarNameInTable="columnfolioTes" msprop:Generator_ColumnPropNameInRow="folioTes" msprop:Generator_ColumnPropNameInTable="folioTesColumn" msprop:Generator_UserColumnName="folioTes" type="xs:string" minOccurs="0" />
+              <xs:element name="folioCaja" msprop:Generator_ColumnVarNameInTable="columnfolioCaja" msprop:Generator_ColumnPropNameInRow="folioCaja" msprop:Generator_ColumnPropNameInTable="folioCajaColumn" msprop:Generator_UserColumnName="folioCaja" type="xs:string" minOccurs="0" />
+              <xs:element name="importe" msprop:Generator_ColumnVarNameInTable="columnimporte" msprop:Generator_ColumnPropNameInRow="importe" msprop:Generator_ColumnPropNameInTable="importeColumn" msprop:Generator_UserColumnName="importe" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" msprop:Generator_ColumnVarNameInTable="columnconcepto" msprop:Generator_ColumnPropNameInRow="concepto" msprop:Generator_ColumnPropNameInTable="conceptoColumn" msprop:Generator_UserColumnName="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaLib" msprop:Generator_ColumnVarNameInTable="columnfechaLib" msprop:Generator_ColumnPropNameInRow="fechaLib" msprop:Generator_ColumnPropNameInTable="fechaLibColumn" msprop:Generator_UserColumnName="fechaLib" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaCap" msprop:Generator_ColumnVarNameInTable="columnfechaCap" msprop:Generator_ColumnPropNameInRow="fechaCap" msprop:Generator_ColumnPropNameInTable="fechaCapColumn" msprop:Generator_UserColumnName="fechaCap" type="xs:string" minOccurs="0" />
+              <xs:element name="diasTrans" msprop:Generator_ColumnVarNameInTable="columndiasTrans" msprop:Generator_ColumnPropNameInRow="diasTrans" msprop:Generator_ColumnPropNameInTable="diasTransColumn" msprop:Generator_UserColumnName="diasTrans" type="xs:string" minOccurs="0" />
+              <xs:element name="num" msprop:Generator_ColumnVarNameInTable="columnnum" msprop:Generator_ColumnPropNameInRow="num" msprop:Generator_ColumnPropNameInTable="numColumn" msprop:Generator_UserColumnName="num" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

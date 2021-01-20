@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsAlcance" targetNamespace="http://tempuri.org/dtsAlcance.xsd" xmlns:mstns="http://tempuri.org/dtsAlcance.xsd" xmlns="http://tempuri.org/dtsAlcance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsAlcance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsAlcance" msprop:Generator_UserDSName="dtsAlcance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblAlcance" msprop:Generator_TableClassName="tblAlcanceDataTable" msprop:Generator_TableVarName="tabletblAlcance" msprop:Generator_TablePropName="tblAlcance" msprop:Generator_RowDeletingName="tblAlcanceRowDeleting" msprop:Generator_RowChangingName="tblAlcanceRowChanging" msprop:Generator_RowEvHandlerName="tblAlcanceRowChangeEventHandler" msprop:Generator_RowDeletedName="tblAlcanceRowDeleted" msprop:Generator_UserTableName="tblAlcance" msprop:Generator_RowChangedName="tblAlcanceRowChanged" msprop:Generator_RowEvArgName="tblAlcanceRowChangeEvent" msprop:Generator_RowClassName="tblAlcanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="drm" msprop:Generator_ColumnVarNameInTable="columndrm" msprop:Generator_ColumnPropNameInRow="drm" msprop:Generator_ColumnPropNameInTable="drmColumn" msprop:Generator_UserColumnName="drm" type="xs:string" minOccurs="0" />
+              <xs:element name="sistema" msprop:Generator_ColumnVarNameInTable="columnsistema" msprop:Generator_ColumnPropNameInRow="sistema" msprop:Generator_ColumnPropNameInTable="sistemaColumn" msprop:Generator_UserColumnName="sistema" type="xs:string" minOccurs="0" />
+              <xs:element name="impresoPor" msprop:Generator_ColumnVarNameInTable="columnimpresoPor" msprop:Generator_ColumnPropNameInRow="impresoPor" msprop:Generator_ColumnPropNameInTable="impresoPorColumn" msprop:Generator_UserColumnName="impresoPor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
