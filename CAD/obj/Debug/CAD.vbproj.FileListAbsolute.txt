@@ -1,0 +1,37 @@
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.pdb
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\cadeneroSispro.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Configuracion.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Configuracion.Persistencia.XML.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Entidades.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Entidades.Persistencia.Relacional.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Persistencia.Relacional.Sql.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Accion.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Notificaciones.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\Contexto.Biblioteca.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.pdb
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbprojAssemblyReference.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.Resources.resources
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.GenerateResource.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.CoreCompileInputs.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.CopyComplete
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CAD.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\bin\Debug\CES.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbprojAssemblyReference.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.Resources.resources
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.GenerateResource.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.CoreCompileInputs.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.vbproj.CopyComplete
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CAD\obj\Debug\CAD.pdb

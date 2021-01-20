@@ -1,0 +1,45 @@
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.pdb
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\cadeneroSispro.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Accion.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Biblioteca.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Entidades.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Entidades.Persistencia.Relacional.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Notificaciones.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Persistencia.Relacional.Sql.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Configuracion.Persistencia.XML.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Configuracion.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.pdb
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.pdb
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbprojAssemblyReference.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.Resources.resources
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.GenerateResource.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.CoreCompileInputs.cache
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.CopyComplete
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.dll
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.xml
+C:\Users\rene.jimenez\Documents\Visual Studio 2019\Project\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CRN.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Configuracion.Persistencia.XML.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\Contexto.Configuracion.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CAD.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.pdb
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\bin\Debug\CES.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbprojAssemblyReference.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.Resources.resources
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.GenerateResource.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.CoreCompileInputs.cache
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.vbproj.CopyComplete
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.dll
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.xml
+C:\Users\rene.jimenez\source\repos\Dev_Web_SAI_v1\Dev_Web_SAI_v1\CRN\obj\Debug\CRN.pdb
