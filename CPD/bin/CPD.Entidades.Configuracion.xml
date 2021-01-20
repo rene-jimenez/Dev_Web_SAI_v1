@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <!--<Property name="ConnectionStrinCPD" value="Data Source=192.168.3.250;Initial Catalog=BD_Web_Sispro_PRUEBAS;User ID=sa;Password=9R14dm1nBD.; " />-->
+<Property name="ConnectionStrinCPD" value="Data Source=DESKTOP-70C2694;Initial Catalog=BD_Web_SAI;User ID=admon;Password=@dmon_SQL"/>
+<!--<Property name="ConnectionStrinCPD" value="Data Source=192.168.3.250;Initial Catalog=BD_Web_Sispro_X8_pruebas;User ID=sa;Password=9R14dm1n; " />-->
+</Configuration>
